@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Previewer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.96);
+      padding: 72px 56px;
+      columns: auto 2;
+      column-gap: 20px;
+    }
+
+    div.card {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      break-inside: avoid;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 500ms ease;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <video src="assets/videos/spiderverse-1/video.mp4" poster="assets/videos/spiderverse-1/poster.webp"
+      preload="none"></video>
+    <img src="assets/videos/spiderverse-1/preview.webp" alt="spiderverse-1">
+  </div>
+
+  <div class="card">
+    <video src="assets/videos/spiderverse-2/video.mp4" poster="assets/videos/spiderverse-2/poster.webp"
+      preload="none"></video>
+    <img src="assets/videos/spiderverse-2/preview.webp" alt="spiderverse-2">
+  </div>
+
+  <div class="card">
+    <video src="assets/videos/arg-cro-2022/video.mp4" poster="assets/videos/arg-cro-2022/poster.webp"
+      preload="none"></video>
+    <img src="assets/videos/arg-cro-2022/preview.webp" alt="arg-cro-2022">
+  </div>
+
+  <div class="card">
+    <video src="assets/videos/eng-frc-2022/video.mp4" poster="assets/videos/eng-frc-2022/poster.webp"
+      preload="none"></video>
+    <img src="assets/videos/eng-frc-2022/preview.webp" alt="eng-frc-2022">
+  </div>
+
+  <div class="card">
+    <video src="assets/videos/doctor-strange-2/video.mp4" poster="assets/videos/doctor-strange-2/poster.webp"
+      preload="none"></video>
+    <img src="assets/videos/doctor-strange-2/preview.webp" alt="doctor-strange-2">
+  </div>
+
+  <div class="card">
+    <video src="assets/videos/the-office/video.mp4" poster="assets/videos/the-office/poster.webp"
+      preload="none"></video>
+    <img src="assets/videos/the-office/preview.webp" alt="the-office">
+  </div>
+
+</body>
+
+</html>
